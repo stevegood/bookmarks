@@ -1,0 +1,9 @@
+/bower_components/
+/node_modules/
+/public/
+/.idea/
+
+*.iml
+*.ipr
+*.iws
+/out/

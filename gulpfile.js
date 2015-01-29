@@ -28,6 +28,7 @@ gulp.task('js', function(){
     var js_src = [
         bower_path + '/jquery/dist/jquery.js',
         bootstrap + 'javascripts/bootstrap.js',
+        'assets/javascripts/context-menu.js',
         'assets/javascripts/main.js'
     ];
 
@@ -43,5 +44,5 @@ gulp.task('images', function(){
 });
 
 gulp.task('compile-assets', ['css', 'fonts', 'js', 'images']);
-gulp.task('init', ['bower', 'compile-assets']);
+//gulp.task('init', ['bower', 'compile-assets']);
 

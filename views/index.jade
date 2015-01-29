@@ -4,4 +4,24 @@ block content
   div.container
     div.page-header
       h1= title
-      p Welcome to #{title}
+      
+    div.row
+      div.col-md-8
+        div.list-group
+          a.list-group-item(href='http://stevegood.org/' target='_blank', data-id="1234567890") stevegood.org
+      div.col-md-4
+        div.form-group
+          input#name.form-control(type="text" required placeholder="name")
+        div.form-group
+          input#url.form-control(type="url" required placeholder="http://")
+        button#submit.btn.btn-primary.btn-block Save Bookmark
+  
+  ul#contextMenu.dropdown-menu(role="menu")
+    li
+      a(tabindex="-1" href="#" data-action="edit")
+        i.glyphicon.glyphicon-edit
+        | &nbsp;Edit
+    li
+      a(tabindex="-1" href="#" data-action="delete")
+        i.glyphicon.glyphicon-remove
+        | &nbsp;Delete
